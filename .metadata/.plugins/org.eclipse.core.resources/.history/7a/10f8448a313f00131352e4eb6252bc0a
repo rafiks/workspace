@@ -1,0 +1,174 @@
+/*
+ * File: MidpointFindingKarel.java
+ * -------------------------------
+ * When you finish writing it, the MidpointFindingKarel class should
+ * leave a beeper on the corner closest to the center of 1st Street
+ * (or either of the two central corners if 1st Street has an even
+ * number of corners).  Karel can put down additional beepers as it
+ * looks for the midpoint, but must pick them up again before it
+ * stops.  The world may be of any size, but you are allowed to
+ * assume that it is at least as tall as it is wide.
+ */
+
+import stanford.karel.*;
+
+public class MidpointFindingKarel extends SuperKarel {
+	public void run(){
+		/*Lets do some Pseudocode
+		 * 
+		 * say we have a number(eg 12)
+		 * to get 6 we need to divide by 2 which
+		 * is the divisor
+		 * 12 /2 = 6 /2 = 3/2 = 1.5
+		 * putbeeper to mark beginiing
+		 * move to end and putbeepeer
+		 * move back and another beeper
+		 * repeat till stopping in the 
+		 * middle
+		 * 
+		 * putbeepers first
+		 * pickbeeper one end to the other
+		*/
+		putbeepers();
+		
+		// move to the beginning
+
+		movetostart();
+		/*
+		 * while there are beepers are present
+		 * pick one beeper from one end
+		 * move to the other end
+		 * and pick the beeper
+		*
+		*/
+		
+		while(frontIsClear()){
+			pickbeepers();
+			//turnpick();
+			//checkbeeper();
+			movetonext();
+
+			//turnAround();	
+			finalbeeper();
+		}
+	}
+
+	//putbeepers to serve as a 
+	// measure guide to get
+	//to the middle
+	private void putbeepers(){
+		while(noBeepersPresent()){
+			while(frontIsClear()){
+				putBeeper();
+				move();
+			}
+			putBeeper();
+		}
+	}
+	
+	/*start picking up the beepers
+	 * from one end to the other
+	*/
+		
+	private void pickbeepers(){
+		while(beepersPresent()){
+			pickBeeper();
+			movetowall();
+		}
+	}
+	
+	/* move to the beginning
+	 */
+	
+	private void movetostart(){
+		turnAround();
+		while(frontIsClear()){
+			move();
+		}
+		turnAround();
+	}
+	
+	/* turns around and move
+	 * 
+	 */
+	private void turnback(){
+		turnAround();
+		move();
+	}
+	
+	private void moveput(){
+		putBeeper();
+		move();
+	}
+	
+	private void turnpick(){
+		//turnAround();
+		pickBeeper();
+		checkbeeper();
+		move();
+	}
+	
+	private void movetowall(){
+		while(frontIsClear()){
+			movetonext();
+		}
+	//	checkbeeper();
+		
+	}
+	
+	/* move to next beeper
+	 * 
+	 */
+	private void movetonext(){
+		if(beepersPresent()){
+			move();
+		} else {
+			//turnAround();
+			//move();
+			checkbeeper();
+		}
+	}
+	
+	/* Check to see if we are at the end of
+	 * a line of beeper
+	 * turn around if we are at the wall
+	 * keep moving to the next beeper
+	 * if there is no beeper
+	 */
+	private void checkbeeper(){
+		if(noBeepersPresent()){
+			if(frontIsBlocked()){
+				turnAround();
+			}
+			move();
+		}
+	}
+	
+	/* Check the final beeper
+	 * true if there is no beepers in
+	 * front and the back of the final beeper
+	 */
+	private void finalbeeper(){
+		if(beepersPresent()){
+			move();
+			if(noBeepersPresent()){
+				twoturnaround();
+				if(noBeepersPresent()){
+					move();
+				}
+			}
+		}
+	}
+	
+	/* 2 turnaround
+	 * 
+	 *
+	 */
+	
+	private void twoturnaround(){
+		turnAround();
+		move();
+		move();
+		turnAround();
+	}
+}

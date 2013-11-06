@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;acm.jar&apos; to &apos;CS106a/src/(default package)&apos;&#x0A;- Original project: &apos;Assignment2&apos;&#x0A;- Destination element: &apos;CS106a/src/(default package)&apos;&#x0A;- Original element: &apos;acm.jar&apos;" description="Copy file" destination="=CS106a/src&lt;" element1="acm.jar" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1383488046530" units="0" version="1.0"/>
+</session>

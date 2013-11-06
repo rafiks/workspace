@@ -1,0 +1,8 @@
+import stanford.karel.SuperKarel;
+
+public class defendDemocracyKarel extends SuperKarel {
+	public void run(){
+		
+	}
+
+}

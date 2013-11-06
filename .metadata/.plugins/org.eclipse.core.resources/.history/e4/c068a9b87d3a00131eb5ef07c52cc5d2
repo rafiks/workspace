@@ -1,0 +1,119 @@
+/*
+ * File: StoneMasonKarel.java
+ * --------------------------
+ * The StoneMasonKarel subclass as it appears here does nothing.
+ * When you finish writing it, it should solve the "repair the quad"
+ * problem from Assignment 1.  In addition to editing the program,
+ * you should be sure to edit this comment so that it no longer
+ * indicates that the program does nothing.
+ */
+
+import stanford.karel.*;
+
+public class StoneMasonKarel extends SuperKarel {
+
+	public void run(){
+		for(int i=0;i<13;i++){
+			check();
+			fixColumn();
+			keepmoving();
+		}
+		//go up the column
+		//check if there is a beeper
+		//if there is one
+		//go back to the start and
+		//fill in the beeper
+		//go check the next column
+		//repeat
+	}
+	
+	private void movetowall(){
+		while(frontIsClear()){
+			move();
+		}
+	}
+
+	private void keepmoving(){
+		if(frontIsBlocked()){
+			if(facingNorth()){
+				backtostart();
+			}
+		}
+			
+		if(facingNorth()){
+			turnRight();
+			move();
+			//turnRight();
+		}
+		if(facingSouth()){
+			turnLeft();
+			move();
+			turnLeft();
+		}
+		if(facingWest()){
+			turnAround();
+			move();
+		}
+		
+	}
+	
+	private void skipbeeper(){
+		if(beepersPresent()){
+			move();
+		}
+	}
+	
+	private void fixColumn(){
+		backtostart();
+		while(frontIsClear()){
+			skipbeeper();
+			while(noBeepersPresent()){
+				
+				if(frontIsClear()){
+					while(noBeepersPresent()){
+						putBeeper();
+						move();
+					}
+				} else {
+					if(noBeepersPresent()){
+						putBeeper();
+					}
+					turnAround();
+					movetowall();
+					//turnLeft();
+				}		
+			}
+		}		
+	}
+	
+	private void nextcolumn(){
+		turnLeft();
+		move();
+		turnLeft();
+//		turnLeft();
+//		move();
+	}
+	
+	private void backtostart(){
+		turnAround();
+		movetowall();
+		turnAround();
+	}
+	
+	private void check(){
+		if(facingEast()){
+			turnLeft();
+		}
+		while(noBeepersPresent()){
+			if(frontIsClear()){
+				move();
+			} else {
+				turnAround();
+				movetowall();
+				nextcolumn();
+				backtostart();
+			}
+		}
+	}
+
+}

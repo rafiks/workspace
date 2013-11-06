@@ -1,0 +1,115 @@
+/*
+ * File: MidpointFindingKarel.java
+ * -------------------------------
+ * When you finish writing it, the MidpointFindingKarel class should
+ * leave a beeper on the corner closest to the center of 1st Street
+ * (or either of the two central corners if 1st Street has an even
+ * number of corners).  Karel can put down additional beepers as it
+ * looks for the midpoint, but must pick them up again before it
+ * stops.  The world may be of any size, but you are allowed to
+ * assume that it is at least as tall as it is wide.
+ */
+
+import stanford.karel.*;
+
+public class MidpointFindingKarel extends SuperKarel {
+	public void run(){
+		/*Lets do some Pseudocode
+		 * 
+		 * say we have a number(eg 12)
+		 * to get 6 we need to divide by 2 which
+		 * is the divisor
+		 * 12 /2 = 6 /2 = 3/2 = 1.5
+		 * putbeeper to mark beginiing
+		 * move to end and putbeepeer
+		 * move back and another beeper
+		 * repeat till stopping in the 
+		 * middle
+		 */
+		
+		//putbeepers
+		//pickbeeper one end to the other
+		
+		putbeepers();
+		
+		//
+		
+		while(beepersPresent()){
+			pickbeepers();
+			movetobeeper();
+		}
+		
+	}
+
+	//putbeepers to serve as a 
+	// measure guide to get
+	//to the middle
+	private void putbeepers(){
+		while(noBeepersPresent()){
+			putBeeper();
+			if(frontIsClear()){
+				move();
+			} else {
+				turnAround();
+			}
+		}
+	}
+	
+	//start picking up the beepers
+	//from one end to the other
+	//
+	private void pickbeepers(){
+		if(beepersPresent()){
+			if(frontIsBlocked()){
+				turnpick();
+			} else {
+				pickBeeper();
+				move();
+			}
+		} 
+	}
+	
+	
+	
+	
+	private void turnput(){
+		putBeeper();
+		turnAround();
+		move();
+	}
+	
+	private void moveput(){
+		putBeeper();
+		move();
+	}
+	
+	private void turnpick(){
+		turnAround();
+		pickBeeper();
+		checkbeeper();
+		move();
+	}
+	
+	private void movetowall(){
+		while(frontIsClear()){
+			move();
+		}
+	}
+	private void movetobeeper(){
+		if(beepersPresent()){
+			move();
+		}
+	}
+	
+	private void checkbeeper(){
+		if(noBeepersPresent()){
+			move();
+		}
+	}
+}
+
+/*for loop
+ * 
+ * 
+ * 
+ */

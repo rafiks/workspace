@@ -1,0 +1,6 @@
+#Tue Oct 29 13:57:24 EDT 2013
+CVSSSH2PreferencePage.PREF_AUTH_METHODS_ORDER=gssapi-with-mic,publickey,password,keyboard-interactive
+eclipse.preferences.version=1
+CVSSSH2PreferencePage.PREF_AUTH_METHODS=gssapi-with-mic,publickey,password,keyboard-interactive
+org.eclipse.jsch.core.hasMigratedSsh2Preferences=true
+PRIVATEKEY=id_dsa,id_rsa,id_rsa_git

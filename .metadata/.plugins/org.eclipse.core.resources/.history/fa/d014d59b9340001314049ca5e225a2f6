@@ -1,0 +1,123 @@
+/*
+ * File: MidpointFindingKarel.java
+ * -------------------------------
+ * When you finish writing it, the MidpointFindingKarel class should
+ * leave a beeper on the corner closest to the center of 1st Street
+ * (or either of the two central corners if 1st Street has an even
+ * number of corners).  Karel can put down additional beepers as it
+ * looks for the midpoint, but must pick them up again before it
+ * stops.  The world may be of any size, but you are allowed to
+ * assume that it is at least as tall as it is wide.
+ */
+
+import stanford.karel.*;
+
+public class MidpointFindingKarel extends SuperKarel {
+	public void run(){
+		
+		/*
+		 * Pseudocode
+		 * 1.laybeepers
+		 * 2.pick them up one end to the other
+		 * 
+		 */
+		laybeepers();
+		backtostart();
+		
+		/* testing movement
+		 * 
+		 */
+		FindTheMiddle();
+		//nextbeeper();
+		//pickmove();
+		//nextbeeper();
+		
+		
+		
+	}
+	
+	/*
+	 * laybeeper
+	 * put beepers from one end to the other
+	 */
+	private void laybeepers(){
+		while(frontIsClear()){
+			putBeeper();
+			move();
+		}
+		putBeeper();
+	}
+	
+	/* backtostart
+	 * moves Karel to the starting position
+	 */
+	private void backtostart(){
+		turnAround();
+		movetowall();
+		turnAround();
+	}
+	
+	/* movetowall
+	 * keep moving until karel hits a wall
+	 */
+	private void movetowall(){
+		while(frontIsClear()){
+			move();
+		}
+	}
+	
+	/* pickmove
+	 * picksabeeper and move
+	 * 
+	 */
+	private void FindTheMiddle(){
+		/*if(beepersPresent()){
+			pickBeeper();
+		}
+		if(frontIsClear()){
+			nextbeeper();
+		} else {
+			turnAround();
+			nextbeeper();
+		}
+		*/
+		pickBeeper();
+		while(noBeepersPresent()){
+			GotoTheNextBeeper();
+			pickBeeper();
+		}
+
+		}
+	
+	/* nextbeeper
+	 * keeps on moving while there is a beeper
+	 * checks if the front is clear
+	 */
+	private void GotoTheNextBeeper(){
+		/*while(frontIsClear()){
+			//if(beepersPresent()){
+			//	move();
+			//}
+			move();
+		}
+		*/
+		if(facingEast()){
+			while(facingEast()){
+				GoToTheOtherEnd();
+			}
+		} else {
+			while(facingWest()){
+				GoToTheOtherEnd();
+			}
+		}		
+	}
+	
+	private void GoToTheOtherEnd(){
+		//move();
+		if(frontIsClear()){
+			move();
+		} else {
+			turnAround();
+		}
+	}
+}
