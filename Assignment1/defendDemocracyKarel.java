@@ -12,20 +12,10 @@ public class defendDemocracyKarel extends SuperKarel {
 		}
 	}
 	
-	/*
-	 * cleanallchads
-	 * pre: facing east before a line
-	 * post: exit the line facing east
-	 */
-	private void cleanChads(){
-		move();
-		cleanLine();
-		move();
-	}
 	
 	/*
 	 * cleanuptheline
-	 * pre :midfle of the avenue
+	 * pre :middle of the avenue
 	 * post middle of the avenue
 	 */
 	private void cleanLine(){

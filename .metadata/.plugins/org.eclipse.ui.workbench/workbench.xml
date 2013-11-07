@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
-<window height="742" width="739" x="627" y="22">
+<window height="742" width="739" x="620" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -16,31 +16,37 @@
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
 <coolItem id="org.eclipse.mylyn.java.actionSet.browsing" itemType="typeToolBarContribution" x="105" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
-<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="UserSeparator" itemType="typeSeparator"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="120" y="22"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1381250219104" focus="true" label="Workspace - Debug">
+<page aggregateWorkingSetId="Aggregate for window 1381250219104" focus="true" label="Workspace - Java">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MFK.java" partName="MFK.java" path="/Users/rafiks/Documents/workspace/Assignment1/MFK.java" title="MFK.java" tooltip="Assignment1/MFK.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/MFK.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1339" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="defendDemocracyKarel.java" partName="defendDemocracyKarel.java" path="/Users/rafiks/Documents/workspace/Assignment1/defendDemocracyKarel.java" title="defendDemocracyKarel.java" tooltip="Assignment1/defendDemocracyKarel.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Assignment1/defendDemocracyKarel.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="278" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="KarelProgram.class" partName="KarelProgram.class" title="KarelProgram.class" tooltip="stanford.karel.KarelProgram" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment1/karel.jar&lt;stanford.karel(KarelProgram.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -49,17 +55,14 @@
 </view>
 <view id="org.eclipse.jdt.ui.TypesView" partName="Types">
 <viewState org.eclipse.jdt.ui.browsing.typestoeditor="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.TypesView.ClassFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.TypesView.ClassFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.InterfaceFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.EnumFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.NonPublicTypeFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.TypesView.AnnotationFilter" isEnabled="false"/>
 </xmlDefinedFilters>
 </customFilters>
-<selectedElements>
-<selectedElement selectedElementPath="=Assignment1/&lt;{MFK.java[MidpointFindingKarel"/>
+<selectedElements>&#x0A;<selectedElement selectedElementPath="=Assignment1/&lt;{MFK.java[MidpointFindingKarel"/>
 </selectedElements>
 </viewState>
 </view>
@@ -82,14 +85,11 @@
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
 <view id="org.eclipse.jdt.ui.MembersView" partName="Members">
 <viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" org.eclipse.jdt.ui.browsing.memberstoeditor="1">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.MembersView.SyntheticMembersFilter" isEnabled="true"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.MembersView.SyntheticMembersFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.MembersView.ImportDeclarationFilter" isEnabled="false"/>
 </xmlDefinedFilters>
 </customFilters>
-<selectedElements>
-<selectedElement selectedElementPath="=Assignment1/&lt;{MFK.java[MidpointFindingKarel~pickmove"/>
+<selectedElements>&#x0A;<selectedElement selectedElementPath="=Assignment1/&lt;{MFK.java[MidpointFindingKarel~pickmove"/>
 </selectedElements>
 </viewState>
 </view>
@@ -97,7 +97,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (4 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -106,6 +106,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -135,9 +138,6 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
 <viewState/>
 </view>
@@ -146,23 +146,19 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackagesView" partName="Packages">
 <viewState org.eclipse.jdt.ui.PackagesView.viewState="0" org.eclipse.jdt.ui.browsing.packagestoeditor="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyPackageFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyPackageFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyInnerPackageFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackagesView.NoPackageContainingFolders" isEnabled="true"/>
 </xmlDefinedFilters>
 </customFilters>
-<selectedElements>
-<selectedElement>
-<logicalPackage selectedElementPath="=Assignment1/karel.jar&lt;"/>
+<selectedElements>&#x0A;<selectedElement>&#x0A;<logicalPackage selectedElementPath="=Assignment1/karel.jar&lt;"/>
 <logicalPackage selectedElementPath="=Assignment1/&lt;"/>
 </selectedElement>
 </selectedElements>
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -218,7 +214,6 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
@@ -249,12 +244,12 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74885845" ratioLeft="492" ratioRight="165" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.jdt.ui.SourceView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<folder activePageID="org.eclipse.ui.views.ProgressView" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -262,7 +257,6 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -346,24 +340,16 @@
 <view id="org.eclipse.jdt.ui.TypesView"/>
 <view id="org.eclipse.jdt.ui.MembersView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@171ada3">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.ProjectsView" label="LabelNotFound"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@171ada3">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.ProjectsView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7489362" ratioLeft="528" ratioRight="177" relationship="2" relative="org.eclipse.ui.internal.ViewStack@171ada3">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7489362" ratioLeft="528" ratioRight="177" relationship="2" relative="org.eclipse.ui.internal.ViewStack@171ada3">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="left" ratio="0.2488189" ratioLeft="158" ratioRight="477" relationship="4" relative="org.eclipse.ui.internal.ViewStack@171ada3">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<info folder="true" part="left" ratio="0.2488189" ratioLeft="158" ratioRight="477" relationship="4" relative="org.eclipse.ui.internal.ViewStack@171ada3">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
@@ -372,9 +358,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2496454" ratioLeft="176" ratioRight="529" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7484277" ratioLeft="357" ratioRight="120" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<info folder="true" part="bottom" ratio="0.7484277" ratioLeft="357" ratioRight="120" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -383,27 +367,18 @@
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@3ebd96" ratio="0.2496454" ratioLeft="176" ratioRight="529" relationship="2" relative="org.eclipse.ui.internal.ViewStack@171ada3">
-<folder activePageID="org.eclipse.jdt.ui.PackagesView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackagesView" label="Packages"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@3ebd96" ratio="0.2496454" ratioLeft="176" ratioRight="529" relationship="2" relative="org.eclipse.ui.internal.ViewStack@171ada3">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackagesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackagesView" label="Packages"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@110f74b" ratio="0.3289225" ratioLeft="174" ratioRight="355" relationship="2" relative="org.eclipse.ui.internal.ViewStack@3ebd96">
-<folder activePageID="org.eclipse.jdt.ui.TypesView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.TypesView" label="Types"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@110f74b" ratio="0.3289225" ratioLeft="174" ratioRight="355" relationship="2" relative="org.eclipse.ui.internal.ViewStack@3ebd96">&#x0A;<folder activePageID="org.eclipse.jdt.ui.TypesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.TypesView" label="Types"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@db6de2" ratio="0.49859154" ratioLeft="177" ratioRight="178" relationship="2" relative="org.eclipse.ui.internal.ViewStack@110f74b">
-<folder activePageID="org.eclipse.jdt.ui.MembersView" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.MembersView" label="Members"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@db6de2" ratio="0.49859154" ratioLeft="177" ratioRight="178" relationship="2" relative="org.eclipse.ui.internal.ViewStack@110f74b">&#x0A;<folder activePageID="org.eclipse.jdt.ui.MembersView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.MembersView" label="Members"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -451,46 +426,32 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7489362" ratioLeft="528" ratioRight="177" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7489362" ratioLeft="528" ratioRight="177" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.22978723" ratioLeft="162" ratioRight="543" relationship="2" relative="topLeft"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@98e354" ratio="0.6998158" ratioLeft="380" ratioRight="163" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@98e354" ratio="0.6998158" ratioLeft="380" ratioRight="163" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@174cf4a" ratio="0.6" ratioLeft="381" ratioRight="254" relationship="4" relative="org.eclipse.ui.internal.ViewStack@98e354">
-<folder activePageID="org.eclipse.ui.texteditor.TemplatesView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.texteditor.TemplatesView" label="Templates"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@174cf4a" ratio="0.6" ratioLeft="381" ratioRight="254" relationship="4" relative="org.eclipse.ui.internal.ViewStack@98e354">&#x0A;<folder activePageID="org.eclipse.ui.texteditor.TemplatesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.texteditor.TemplatesView" label="Templates"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d520be" ratio="0.6" ratioLeft="381" ratioRight="254" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d520be" ratio="0.6" ratioLeft="381" ratioRight="254" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -587,7 +548,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.499316" ratioLeft="365" ratioRight="366" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
@@ -605,159 +566,158 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/MidpointFindingKarel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/MFK.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Assignment1/defendDemocracyKarel.java"/>
 <editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment1/karel.jar&lt;stanford.karel(KarelProgram.class"/>
 </editors>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1264" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="403" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="827" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="420" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1578" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="435" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1374" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1578" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1529" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="215" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1575" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="357" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1571" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="381" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1552" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="435" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="1566" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="824" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="571" y="20"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="215" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="357" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="403" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="571" y="20"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="420" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="913" y="0"/>
 </item>
-<item historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="722" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="357" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1653" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="381" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1679" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="435" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1653" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1679" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="215" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="357" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1653" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="403" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1679" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="420" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="435" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1679" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1653" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="215" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1679" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="357" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="403" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1653" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="420" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1679" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="435" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1653" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1679" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="215" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1653" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="357" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1679" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="381" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="435" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1653" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1713" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="204" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1733" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="215" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1055" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="357" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1333" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="403" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1357" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="420" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1368" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="435" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1468" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="179" y="0"/>
 </item>
-<item historyLabel="MidpointFindingKarel.java" index="0">
-<position info="not_deleted" x="1521" y="0"/>
+<item historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="235" y="0"/>
 </item>
-<item historyLabel="KarelProgram.class" index="2">
+<item historyLabel="KarelProgram.class" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="MFK.java" index="1">
-<position info="not_deleted" x="722" y="0"/>
+<item active="true" historyLabel="defendDemocracyKarel.java" index="0">
+<position info="not_deleted" x="235" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -765,11 +725,11 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 <trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -785,41 +745,29 @@
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="KarelProgram.class" tooltip="stanford.karel.KarelProgram">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment1/karel.jar&lt;stanford.karel(KarelProgram.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MidpointFindingKarel.java" tooltip="Assignment1/MidpointFindingKarel.java">
-<persistable path="/Assignment1/MidpointFindingKarel.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="defendDemocracyKarel.java" tooltip="Assignment1/defendDemocracyKarel.java">
+<persistable path="/Assignment1/defendDemocracyKarel.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StoneMasonKarel.java" tooltip="Assignment1/StoneMasonKarel.java">
-<persistable path="/Assignment1/StoneMasonKarel.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Program.class" tooltip="acm.program.Program">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=03 Welcome to Java/acm.jar&lt;acm.program(Program.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="StoneMasonKarel.class" tooltip="Assignment1/StoneMasonKarel.class">
-<persistable path="/Assignment1/StoneMasonKarel.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HelloProgram.java" tooltip="03 Welcome to Java/HelloProgram.java">
+<persistable path="/03 Welcome to Java/HelloProgram.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CollectNewspaperKarel.java" tooltip="Assignment1/CollectNewspaperKarel.java">
-<persistable path="/Assignment1/CollectNewspaperKarel.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RowSweepingKarel.java" tooltip="02 Karel Plays with Beepers/RowSweepingKarel.java">
+<persistable path="/02 Karel Plays with Beepers/RowSweepingKarel.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CheckerboardKarel.java" tooltip="Assignment1/CheckerboardKarel.java">
-<persistable path="/Assignment1/CheckerboardKarel.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RoombaKarel.java" tooltip="02 Karel Plays with Beepers/RoombaKarel.java">
+<persistable path="/02 Karel Plays with Beepers/RoombaKarel.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="SuperKarel.class" tooltip="stanford.karel.SuperKarel">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment1/karel.jar&lt;stanford.karel(SuperKarel.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HurdleJumpingKarel.java" tooltip="02 Karel Plays with Beepers/HurdleJumpingKarel.java">
+<persistable path="/02 Karel Plays with Beepers/HurdleJumpingKarel.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Karel.class" tooltip="stanford.karel.Karel">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment1/karel.jar&lt;stanford.karel(Karel.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BeeperDoublingKarel.java" tooltip="02 Karel Plays with Beepers/BeeperDoublingKarel.java">
+<persistable path="/02 Karel Plays with Beepers/BeeperDoublingKarel.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="KarelWorld.class" tooltip="stanford.karel.KarelWorld">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Assignment1/karel.jar&lt;stanford.karel(KarelWorld.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurKarelProgram.java" tooltip="01 MeetKarel/OurKarelProgram.java">
-<persistable path="/01 MeetKarel/OurKarelProgram.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="karel.jar" tooltip="01 MeetKarel/karel.jar">
-<persistable path="/01 MeetKarel/karel.jar"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OurKarelProgram.java" tooltip="/Users/rafiks/Downloads/MeetKarel/OurKarelProgram.java">
-<persistable uri="file:/Users/rafiks/Downloads/MeetKarel/OurKarelProgram.java"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="karel.jar" tooltip="/Users/rafiks/Downloads/MeetKarel/karel.jar">
-<persistable uri="file:/Users/rafiks/Downloads/MeetKarel/karel.jar"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindRange.java" tooltip="Assignment2/FindRange.java">
+<persistable path="/Assignment2/FindRange.java"/>
 </file>
 </mruList>
 </workbench>
